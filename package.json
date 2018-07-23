@@ -1,0 +1,56 @@
+{
+  "name": "padipata",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "egg": "^2.0.0",
+    "egg-connector-remote": "^1.0.6",
+    "egg-cors": "^2.0.0",
+    "egg-scripts": "^2.5.1",
+    "egg-sequelize": "^3.1.5",
+    "egg-validate": "^1.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.22.2",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon",
+    "stop": "egg-scripts stop",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "migrate:new": "egg-sequelize migration:create",
+    "up": "egg-sequelize db:migrate",
+    "down": "egg-sequelize db:migrate:undo"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
