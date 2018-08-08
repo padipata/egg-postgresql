@@ -1,8 +1,5 @@
 'use strict';
 
-const jwt = require('jsonwebtoken');
-const crypto = require('crypto');
-
 const Controller = require('egg').Controller;
 
 class UserController extends Controller {
