@@ -10,15 +10,15 @@ module.exports = appInfo => {
     config.domain = 'http://127.0.0.1:7001';
 
     // -------------------------微信相关---------------------------
-    config.xcx_appId = 'wxea52628c53c37185';
-    config.xcx_appSecret = '2f0c58c9f8f9f37adf53c0c2a100f7f1';
+    config.xcx_appId = '';
+    config.xcx_appSecret = '';
     // -----------------------------------------------------------
 
     // ------------------------七牛云相关---------------------------
-    config.accessKey = '5hILYOS8yK0havuWevEe5R3Qh-AUEGwEvLjHvBuH';
-    config.secretKey = 'WWuWBxzWb71KHtihOkDjO7u-jOnh7q6FQd3jqjii';
-    config.bucket_name = 'wepy-map';
-    config.bucket_domain = 'http://pcpy68kg7.bkt.clouddn.com/';
+    config.accessKey = '';
+    config.secretKey = '';
+    config.bucket_name = '';
+    config.bucket_domain = '';
     // -----------------------------------------------------------
 
     // token凭证
