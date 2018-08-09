@@ -44,8 +44,8 @@
     "ci": "npm run lint && npm run cov",
     "autod": "autod",
     "migrate:new": "egg-sequelize migration:create",
-    "up": "egg-sequelize db:migrate",
-    "down": "egg-sequelize db:migrate:undo"
+    "migrate:up": "egg-sequelize db:migrate",
+    "migrate:down": "egg-sequelize db:migrate:undo"
   },
   "ci": {
     "version": "8"
